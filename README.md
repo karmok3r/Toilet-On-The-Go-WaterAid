@@ -218,12 +218,13 @@ Toilet-On-The-Go-WaterAid/
 ### Prerequisites
 
 **For GIS Analysis:**
-- ArcGIS Desktop 10.x or ArcGIS Pro
+- ArcGIS ArcGIS Pro
 - Spatial Analyst Extension
 - Network Analyst Extension (optional)
 
 **For Technical Drawings:**
-- AutoCAD 2018 or later
+- AutoCAD 2018
+- Adobe Illustrator
 - PDF reader for documentation
 
 ### Working with GIS Data
@@ -260,17 +261,18 @@ This project represents a collaborative effort by professionals committed to imp
 
 **Uday Karmoker**  
 *Jr. Design Engineer, CCECC*  
-📧 Contact: [GitHub - @karmok3r](https://github.com/karmok3r)
+📧 Contact: karmok3r@gmail.com
 - Technical design and architectural drawings
 - CAD modeling and specifications
 - Accessibility feature design
 - Construction documentation
 
-**Umme Faria Rahim**  
+**Umme Faria Rahim**
+📧 Contact: juthi651@gmail.com
 *M.Sc. in Construction Project Management*  
 - Project management and coordination
-- GIS analysis and site selection
-- ArcGIS spatial modeling
+- Budget Scheduling
+- Operation and maintenance Ideation
 - Requirements analysis and stakeholder engagement
 - Implementation planning
 
@@ -379,4 +381,4 @@ This project directly contributes to:
 
 **Made with ❤️ by Team ProCritic for universal sanitation access**
 
-**"নির্ভর" - Dependable Sanitation for Everyone, Everywhere**
+**"নির্ভার" - Dependable Sanitation for Everyone, Everywhere**
