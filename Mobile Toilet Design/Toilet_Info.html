@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Toilet Design Criteria for Bangladesh</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 320px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+        .flowchart-step {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            min-height: 100px;
+            transition: all 0.3s ease;
+        }
+        .flowchart-arrow {
+            font-size: 2rem;
+            line-height: 1;
+            color: #118AB2;
+        }
+    </style>
+</head>
+<body class="text-[#073B4C]">
+
+    <header class="bg-[#073B4C] text-white p-8 text-center rounded-b-3xl shadow-lg">
+        <h1 class="text-4xl md:text-5xl font-black">Re-thinking Sanitation</h1>
+        <p class="text-lg md:text-xl mt-2 font-light max-w-3xl mx-auto">Essential Design Criteria for Mobile Toilets in the Bangladeshi Context</p>
+    </header>
+
+    <main class="container mx-auto p-4 md:p-8">
+
+        <section id="the-need" class="mb-12">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-[#118AB2]">The Urgent Need for Better Solutions</h2>
+                <p class="mt-2 max-w-2xl mx-auto text-gray-600">In many urban areas of Bangladesh, the sanitation crisis is severe. Existing public facilities are overburdened and often inadequate, posing significant health and safety risks to the population.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                    <p class="text-7xl font-black text-[#FF6B6B]">50+</p>
+                    <p class="text-xl font-semibold mt-2">People Per Latrine</p>
+                    <p class="mt-2 text-gray-600">In densely populated urban informal settlements, a single toilet facility is often shared by over 50 individuals, leading to extreme overuse and poor hygiene.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                    <p class="text-7xl font-black text-[#FFD166]">66%</p>
+                    <p class="text-xl font-semibold mt-2">Urban Population Lack Safe Sanitation</p>
+                    <p class="mt-2 text-gray-600">Approximately two-thirds of the urban population in Bangladesh lack access to safely managed sanitation, increasing the risk of waterborne diseases.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="user-first" class="mb-12">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-[#118AB2]">A User-First Design Framework</h2>
+                <p class="mt-2 max-w-2xl mx-auto text-gray-600">Effective mobile toilets must be designed around the diverse needs of their users. Safety, privacy, and accessibility are not luxuries—they are fundamental requirements for adoption and success.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-bold mb-4 text-center">User Priorities Ranked</h3>
+                    <p class="text-sm text-gray-600 text-center mb-4">When considering public toilets, users across all demographics consistently rank these factors as their top concerns. A design that fails to address these is destined for failure.</p>
+                    <div class="chart-container">
+                        <canvas id="userPrioritiesChart"></canvas>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-bold mb-4 text-center">The Gender Safety Gap</h3>
+                     <p class="text-sm text-gray-600 text-center mb-4">Women and girls face disproportionate risks and require facilities that ensure their safety and cater to menstrual hygiene needs. The perception of safety is a major barrier to use.</p>
+                    <div class="chart-container">
+                        <canvas id="genderSafetyChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="design-pillars" class="mb-12">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-[#118AB2]">Core Design & Technical Pillars</h2>
+                <p class="mt-2 max-w-2xl mx-auto text-gray-600">A successful mobile toilet combines robust materials, smart structural features, and essential user amenities to create a durable, hygienic, and user-friendly facility.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-bold mb-3 text-[#06D6A0]">Materials</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center"><span class="text-2xl mr-3">🦾</span>Durable & Lightweight (FRP)</li>
+                        <li class="flex items-center"><span class="text-2xl mr-3">🛡️</span>Corrosion & Weather Resistant</li>
+                        <li class="flex items-center"><span class="text-2xl mr-3">🧼</span>Easy-to-Clean Surfaces</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-bold mb-3 text-[#FFD166]">Structure</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center"><span class="text-2xl mr-3">🌬️</span>Adequate Ventilation</li>
+                        <li class="flex items-center"><span class="text-2xl mr-3">👣</span>Anti-Slip Flooring</li>
+                        <li class="flex items-center"><span class="text-2xl mr-3">♿</span>Accessibility Ramps & Rails</li>
+                        <li class="flex items-center"><span class="text-2xl mr-3">🔒</span>Secure, Lockable Door</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-bold mb-3 text-[#FF6B6B]">Amenities</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center"><span class="text-2xl mr-3">💧</span>Handwashing Station</li>
+                        <li class="flex items-center"><span class="text-2xl mr-3">💡</span>Internal Lighting (Solar)</li>
+                        <li class="flex items-center"><span class="text-2xl mr-3">🧻</span>Tissue & Soap Dispenser</li>
+                        <li class="flex items-center"><span class="text-2xl mr-3">🗑️</span>Waste Bin (especially for MHM)</li>
+                    </ul>
+                </div>
+                 <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-bold mb-3 text-[#118AB2]">Waste System</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center"><span class="text-2xl mr-3">📦</span>Self-Contained Tank</li>
+                        <li class="flex items-center"><span class="text-2xl mr-3">💨</span>Vented Tank to Reduce Odor</li>
+                        <li class="flex items-center"><span class="text-2xl mr-3">⚙️</span>Easy Access for Evacuation</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="operations" class="mb-12">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-[#118AB2]">Sustainable Operations & Maintenance Lifecycle</h2>
+                <p class="mt-2 max-w-2xl mx-auto text-gray-600">A well-designed toilet is only effective if it's well-maintained. A clear operational plan for cleaning, waste management, and upkeep is critical for long-term success and user acceptance.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 items-center gap-4 text-sm md:text-base font-semibold">
+                <div class="flowchart-step bg-[#06D6A0]/20 text-[#073B4C]">Deployment & Setup</div>
+                <div class="flowchart-arrow text-center hidden lg:block">➔</div>
+                <div class="flowchart-arrow text-center col-span-2 md:col-span-1 lg:hidden">↓</div>
+                <div class="flowchart-step bg-[#FFD166]/20 text-[#073B4C]">Daily Use & Fee Collection</div>
+                <div class="flowchart-arrow text-center hidden lg:block">➔</div>
+                <div class="flowchart-arrow text-center col-span-2 md:col-span-1 lg:hidden">↓</div>
+                <div class="flowchart-step bg-[#FF6B6B]/20 text-[#073B4C]">Scheduled Cleaning & Restocking</div>
+                <div class="flowchart-arrow text-center hidden lg:block">➔</div>
+                <div class="flowchart-arrow text-center col-span-2 md:col-span-1 lg:hidden">↓</div>
+                <div class="flowchart-step bg-[#118AB2]/20 text-[#073B4C]">Safe Waste Evacuation</div>
+                <div class="flowchart-arrow text-center hidden lg:block">➔</div>
+                <div class="flowchart-arrow text-center col-span-2 md:col-span-1 lg:hidden">↓</div>
+                <div class="flowchart-step bg-[#073B4C]/20 text-white">Maintenance & Redeployment</div>
+            </div>
+             <div class="bg-white rounded-lg shadow-md p-6 mt-8">
+                <h3 class="text-xl font-bold mb-4 text-center">Key Waste Management Components</h3>
+                <p class="text-sm text-gray-600 text-center mb-4">Effective waste management is a multi-stage process. Each stage requires proper infrastructure and trained personnel to prevent environmental contamination and health hazards.</p>
+                <div class="chart-container" style="height: 380px;">
+                    <canvas id="wasteManagementChart"></canvas>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="bg-[#073B4C] text-white p-6 text-center mt-8">
+        <p>Infographic by Canvas Infographics. Data synthesized from reports by WaterAid, BRAC, and academic studies on sanitation in Bangladesh.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const wrapLabel = (label) => {
+                const maxLength = 16;
+                if (label.length <= maxLength) return label;
+                
+                const words = label.split(' ');
+                const lines = [];
+                let currentLine = '';
+
+                words.forEach(word => {
+                    if ((currentLine + ' ' + word).trim().length > maxLength) {
+                        lines.push(currentLine.trim());
+                        currentLine = word;
+                    } else {
+                        currentLine = (currentLine + ' ' + word).trim();
+                    }
+                });
+                lines.push(currentLine.trim());
+                return lines;
+            };
+
+            const tooltipTitleCallback = (tooltipItems) => {
+                const item = tooltipItems[0];
+                let label = item.chart.data.labels[item.dataIndex];
+                if (Array.isArray(label)) {
+                    return label.join(' ');
+                }
+                return label;
+            };
+
+            const defaultChartOptions = {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            font: {
+                                family: "'Inter', sans-serif"
+                            }
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            title: tooltipTitleCallback
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        ticks: {
+                            font: {
+                                family: "'Inter', sans-serif"
+                            }
+                        },
+                        grid: {
+                            display: false
+                        }
+                    },
+                    y: {
+                        ticks: {
+                           font: {
+                                family: "'Inter', sans-serif"
+                            }
+                        },
+                        beginAtZero: true
+                    }
+                }
+            };
+            
+            const userPrioritiesCtx = document.getElementById('userPrioritiesChart').getContext('2d');
+            new Chart(userPrioritiesCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['Safety & Security', 'Cleanliness & Hygiene', 'Privacy', 'Water Availability', 'Accessibility for All'],
+                    datasets: [{
+                        label: 'Importance Score (out of 10)',
+                        data: [9.5, 9.2, 8.8, 8.5, 8.1],
+                        backgroundColor: ['#FF6B6B', '#FFD166', '#06D6A0', '#118AB2', '#073B4C'],
+                        borderColor: 'rgba(255, 255, 255, 0)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                     ...defaultChartOptions,
+                     indexAxis: 'y',
+                     plugins: {
+                        ...defaultChartOptions.plugins,
+                        legend: {
+                            display: false
+                        }
+                     }
+                }
+            });
+
+            const genderSafetyCtx = document.getElementById('genderSafetyChart').getContext('2d');
+            new Chart(genderSafetyCtx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Feel Unsafe', 'Feel Safe'],
+                    datasets: [{
+                        label: 'Safety Perception',
+                        data: [75, 25],
+                        backgroundColor: ['#FF6B6B', '#06D6A0'],
+                        borderColor: '#ffffff',
+                        borderWidth: 4
+                    }]
+                },
+                options: {
+                     ...defaultChartOptions,
+                     cutout: '60%',
+                     plugins: {
+                        ...defaultChartOptions.plugins,
+                        title: {
+                            display: true,
+                            text: 'Percentage of Women Who Feel Unsafe in Public Toilets',
+                            font: { size: 14, family: "'Inter', sans-serif" }
+                        }
+                     }
+                }
+            });
+
+            const wasteManagementCtx = document.getElementById('wasteManagementChart').getContext('2d');
+            new Chart(wasteManagementCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['Urban Slums', 'Public Spaces', 'Rural Areas'].map(wrapLabel),
+                    datasets: [
+                        {
+                            label: 'Containment & Collection',
+                            data: [3, 5, 4],
+                            backgroundColor: '#118AB2',
+                        },
+                        {
+                            label: 'Safe Transport',
+                            data: [2, 4, 2],
+                            backgroundColor: '#06D6A0',
+                        },
+                        {
+                            label: 'Treatment & Disposal',
+                            data: [1, 3, 1],
+                            backgroundColor: '#FFD166',
+                        }
+                    ]
+                },
+                options: {
+                    ...defaultChartOptions,
+                    scales: {
+                        x: {
+                            stacked: true,
+                            ticks: {
+                                font: {
+                                    family: "'Inter', sans-serif"
+                                }
+                            },
+                             grid: {
+                                display: false
+                            }
+                        },
+                        y: {
+                            stacked: true,
+                            title: {
+                                display: true,
+                                text: 'Effectiveness Score (out of 10)'
+                            }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
